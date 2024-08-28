@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto ONE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <header class ="encabezado"> Cifrado ONE </header>
+        <main>
+            <section class="contenedor1">      
+                <textarea id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+                    
+                <div class="izquierda">
+                <label class="sel" for="accion">Selecciona opción:</label>
+                <select id="accion">
+                    <option class="encriptar" value="encriptar">Encriptar</option>
+                    <option class="desencriptar" value="desencriptar">Desencriptar</option>
+                </select>
+                
+                <button id="procesar" onclick="procesar()">Procesar</button>
+                </div>
+            </section>
+
+
+            <section class="contenedor2">
+                <div id="resultado">El resultado aparecerá aquí.</div>
+                <button id="copyButton">Copiar texto</button>
+            </section>
+       
+    </main>
+    <footer>
+        <p>Desarrollado para [ONE] | <a href="https://github.com/San-ntiag8" target="_blank">Mi GitHub:San-ntiag8</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

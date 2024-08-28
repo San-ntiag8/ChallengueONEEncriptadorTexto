@@ -1,0 +1,166 @@
+:root {
+    --color-primario: #581845;
+    --color-secundario: #900C1F;
+    --color-terciario: #2d0a6e;
+    --color-textos:  #ffffff;
+    --color-hover: #ffC300;
+    --fuente-principal: 'Helvetica', sans-serif;
+    --fuente-secundaria: 'Verdana', sans-serif;
+}
+
+* {
+    font-family: var(--fuente-principal);
+    background: aliceblue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    text-align: center;
+    padding: 12px;
+    font-family: var(--fuente-principal);
+    font-size: 40px;
+    color:var(--color-primario);
+
+}
+
+main {
+    width: 800px;
+    height: 75vh;
+    display:flex;
+    justify-content: center;
+    gap: 16px;
+    margin:0 auto;
+}
+
+.contenedor1{
+    padding: 12px;
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    gap:12px;
+   
+}
+
+.contenedor2{
+    gap:5px;
+    padding: 12px;
+    display: flex;
+    width:100%;
+    flex-direction: column;
+}
+#texto { 
+    width: 100%;
+    height: 100%;
+    border:2px solid var(--color-secundario);
+    border:4px;
+    padding: 12px;
+    color:black;
+    text-transform: lowercase;
+    margin-bottom: 10px;
+}
+
+
+#resultado {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--color-secundario);
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: var(--color-primario);
+    overflow-wrap: break-word;
+    color: var(--color-textos);
+}
+
+.izquierda{
+    display:flex;
+    gap: 16px;
+    justify-content:center;
+}
+
+#procesar {
+
+    padding: 12px;
+    background-color: var(--color-terciario);
+    color: var(--color-textos);
+    border: var(--color-secundario);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#procesar:hover {
+    transition: background-color 1s ease;
+    background-color: var(--color-hover);
+}
+
+
+#copyButton {
+
+    padding: 12px;
+    background-color: var(--color-primario);
+    color: var(--color-textos);
+    border: var(--color-secundario);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#copyButton:hover {
+    transition: background-color 1s ease;
+    background-color: var(--color-hover);
+}
+
+.sel {
+    white-space: nowrap; 
+    width: 100%;
+    padding:12px;
+    color: black;
+    border: var(--color-secundario);
+}
+#accion {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--color-primario);
+    color: var(--color-textos);
+    
+}
+
+.encriptar{
+    padding: 12px;
+    background-color: var(--color-primario);
+    color: var(--color-textos);
+    cursor: pointer;
+}
+
+.desencriptar{
+    padding: 12px;
+    background-color: var(--color-primario);
+    color: var(--color-textos);
+    cursor: pointer;
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    margin-top:2px;
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    padding: 12px;
+    text-align: center;
+    border-top: 8px solid var(--color-terciario);
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
